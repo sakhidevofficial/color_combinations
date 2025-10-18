@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAS IT Services - Dark Theme Color Combinations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 0;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            font-weight: 300;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ffffff, #cccccc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #888;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .combinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .combination-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .combination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        .color-preview {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-placeholder {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #000;
+            border: 3px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            color: white;
+            z-index: 2;
+            position: relative;
+        }
+
+        .card-info {
+            padding: 25px;
+            background: rgba(20, 20, 20, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .combination-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .color-codes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .color-code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .usage-note {
+            font-size: 0.9em;
+            color: #bbb;
+            font-style: italic;
+        }
+
+        /* Individual color scheme styles */
+        .scheme-1 { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+        .scheme-2 { background: linear-gradient(135deg, #2d1b69 0%, #11998e 100%); }
+        .scheme-3 { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
+        .scheme-4 { background: linear-gradient(135deg, #232526 0%, #414345 100%); }
+        .scheme-5 { background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%); }
+        .scheme-6 { background: linear-gradient(135deg, #0c0c0c 0%, #1f1f1f 50%, #2c2c2c 100%); }
+        .scheme-7 { background: linear-gradient(135deg, #434343 0%, #000000 100%); }
+        .scheme-8 { background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); }
+        .scheme-9 { background: linear-gradient(135deg, #1e2124 0%, #36393f 100%); }
+        .scheme-10 { background: linear-gradient(135deg, #212529 0%, #495057 100%); }
+        .scheme-11 { background: linear-gradient(135deg, #141e30 0%, #243b55 100%); }
+        .scheme-12 { background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%); }
+
+        .accent-dot {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            top: 15px;
+            right: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .combinations-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SAS IT Services</h1>
+        <p>Professional Dark Theme Color Combinations for Your Brand</p>
+    </div>
+
+    <div class="combinations-grid">
+        <!-- Classic Professional -->
+        <div class="combination-card">
+            <div class="color-preview scheme-1">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #4a9eff;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Classic Professional</h3>
+                <div class="color-codes">
+                    <span class="color-code">#1a1a2e</span>
+                    <span class="color-code">#16213e</span>
+                    <span class="color-code">#0f3460</span>
+                    <span class="color-code">#4a9eff</span>
+                </div>
+                <p class="usage-note">Perfect for corporate websites and professional applications</p>
+            </div>
+        </div>
+
+        <!-- Modern Tech -->
+        <div class="combination-card">
+            <div class="color-preview scheme-2">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #00d4aa;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Modern Tech</h3>
+                <div class="color-codes">
+                    <span class="color-code">#2d1b69</span>
+                    <span class="color-code">#11998e</span>
+                    <span class="color-code">#00d4aa</span>
+                    <span class="color-code">#ffffff</span>
+                </div>
+                <p class="usage-note">Great for tech startups and innovative IT solutions</p>
+            </div>
+        </div>
+
+        <!-- Deep Ocean -->
+        <div class="combination-card">
+            <div class="color-preview scheme-3">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #74b9ff;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Deep Ocean</h3>
+                <div class="color-codes">
+                    <span class="color-code">#1e3c72</span>
+                    <span class="color-code">#2a5298</span>
+                    <span class="color-code">#74b9ff</span>
+                    <span class="color-code">#ffffff</span>
+                </div>
+                <p class="usage-note">Trustworthy and reliable, ideal for financial IT services</p>
+            </div>
+        </div>
+
+        <!-- Sophisticated Gray -->
+        <div class="combination-card">
+            <div class="color-preview scheme-4">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #f39c12;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Sophisticated Gray</h3>
+                <div class="color-codes">
+                    <span class="color-code">#232526</span>
+                    <span class="color-code">#414345</span>
+                    <span class="color-code">#f39c12</span>
+                    <span class="color-code">#ffffff</span>
+                </div>
+                <p class="usage-note">Elegant and versatile for any business application</p>
+            </div>
+        </div>
+
+        <!-- Minimalist Dark -->
+        <div class="combination-card">
+            <div class="color-preview scheme-5">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #ff6b6b;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Minimalist Dark</h3>
+                <div class="color-codes">
+                    <span class="color-code">#1a1a1a</span>
+                    <span class="color-code">#333333</span>
+                    <span class="color-code">#ff6b6b</span>
+                    <span class="color-code">#ffffff</span>
+                </div>
+                <p class="usage-note">Clean and modern, perfect for SaaS platforms</p>
+            </div>
+        </div>
+
+        <!-- Carbon Fiber -->
+        <div class="combination-card">
+            <div class="color-preview scheme-6">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #00cec9;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Carbon Fiber</h3>
+                <div class="color-codes">
+                    <span class="color-code">#0c0c0c</span>
+                    <span class="color-code">#1f1f1f</span>
+                    <span class="color-code">#2c2c2c</span>
+                    <span class="color-code">#00cec9</span>
+                </div>
+                <p class="usage-note">High-tech appearance for cutting-edge IT solutions</p>
+            </div>
+        </div>
+
+        <!-- Executive Suite -->
+        <div class="combination-card">
+            <div class="color-preview scheme-7">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #ffd700;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Executive Suite</h3>
+                <div class="color-codes">
+                    <span class="color-code">#434343</span>
+                    <span class="color-code">#000000</span>
+                    <span class="color-code">#ffd700</span>
+                    <span class="color-code">#ffffff</span>
+                </div>
+                <p class="usage-note">Premium and luxurious for enterprise clients</p>
+            </div>
+        </div>
+
+        <!-- Corporate Blue -->
+        <div class="combination-card">
+            <div class="color-preview scheme-8">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #3498db;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Corporate Blue</h3>
+                <div class="color-codes">
+                    <span class="color-code">#2c3e50</span>
+                    <span class="color-code">#34495e</span>
+                    <span class="color-code">#3498db</span>
+                    <span class="color-code">#ffffff</span>
+                </div>
+                <p class="usage-note">Traditional corporate look with modern appeal</p>
+            </div>
+        </div>
+
+        <!-- Discord Dark -->
+        <div class="combination-card">
+            <div class="color-preview scheme-9">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #7289da;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Discord Dark</h3>
+                <div class="color-codes">
+                    <span class="color-code">#1e2124</span>
+                    <span class="color-code">#36393f</span>
+                    <span class="color-code">#7289da</span>
+                    <span class="color-code">#ffffff</span>
+                </div>
+                <p class="usage-note">Popular among developers and tech communities</p>
+            </div>
+        </div>
+
+        <!-- Bootstrap Dark -->
+        <div class="combination-card">
+            <div class="color-preview scheme-10">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #28a745;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Bootstrap Dark</h3>
+                <div class="color-codes">
+                    <span class="color-code">#212529</span>
+                    <span class="color-code">#495057</span>
+                    <span class="color-code">#28a745</span>
+                    <span class="color-code">#ffffff</span>
+                </div>
+                <p class="usage-note">Web-standard colors for consistent user experience</p>
+            </div>
+        </div>
+
+        <!-- Midnight Professional -->
+        <div class="combination-card">
+            <div class="color-preview scheme-11">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #ff7675;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Midnight Professional</h3>
+                <div class="color-codes">
+                    <span class="color-code">#141e30</span>
+                    <span class="color-code">#243b55</span>
+                    <span class="color-code">#ff7675</span>
+                    <span class="color-code">#ffffff</span>
+                </div>
+                <p class="usage-note">Sophisticated with a touch of warmth for client relations</p>
+            </div>
+        </div>
+
+        <!-- Space Dark -->
+        <div class="combination-card">
+            <div class="color-preview scheme-12">
+                <div class="logo-placeholder">SAS<br>IT SERVICES</div>
+                <div class="accent-dot" style="background: #a29bfe;"></div>
+            </div>
+            <div class="card-info">
+                <h3 class="combination-title">Space Dark</h3>
+                <div class="color-codes">
+                    <span class="color-code">#0f0f23</span>
+                    <span class="color-code">#1a1a2e</span>
+                    <span class="color-code">#16213e</span>
+                    <span class="color-code">#a29bfe</span>
+                </div>
+                <p class="usage-note">Futuristic and innovative for AI and machine learning services</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>All color combinations are optimized for accessibility and professional use.<br>
+        Your SAS IT Services logo will look stunning with any of these dark theme palettes.</p>
+    </div>
+</body>
+</html>
